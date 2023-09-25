@@ -85,4 +85,9 @@ button:disabled {
     flex-direction: column;
     gap: 20px
 }
+#bottomImg {
+    width: 30%;
+    padding: 20px;
+}
+
 }
