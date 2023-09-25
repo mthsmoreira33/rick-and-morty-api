@@ -99,3 +99,9 @@ lastPageButton.addEventListener("click", () => {
     loadCharacters(currentPage, searchBox.value);
   }
 });
+prevPageButton.addEventListener("click", () => {
+  if (currentPage > 1 && !isLoading) {
+    currentPage--;
+    loadCharacters(currentPage);
+  }
+});
