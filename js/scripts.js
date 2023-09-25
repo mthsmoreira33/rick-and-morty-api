@@ -12,3 +12,5 @@ const prevPageButton = document.getElementById("prevPage");
 const nextPageButton = document.getElementById("nextPage");
 const firstPageButton = document.getElementById("firstPage");
 const lastPageButton = document.getElementById("lastPage");
+const card = document.createElement("div");
+card.className = "card";
