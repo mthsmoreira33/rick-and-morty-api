@@ -93,3 +93,9 @@ firstPageButton.addEventListener("click", () => {
     loadCharacters(currentPage, searchBox.value);
   }
 });
+lastPageButton.addEventListener("click", () => {
+  if (currentPage < response.data.info.pages && !isLoading) {
+    currentPage = Math.ceil(response.data.info.pages);
+    loadCharacters(currentPage, searchBox.value);
+  }
+});
