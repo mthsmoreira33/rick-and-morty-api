@@ -83,3 +83,7 @@ async function loadCharacters(page = 1, name = "") {
 }
 
 loadCharacters();
+searchBox.addEventListener("input", () => {
+  currentPage = 1;
+  loadCharacters(currentPage, searchBox.value);
+});
