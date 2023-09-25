@@ -12,6 +12,18 @@
         <h1>API de Rick and Morty</h1>
         <input type="text" id="searchBox" placeholder="Pesquise o nome do personagem" />
     </header>
+    <main>
+        <div class="buttonWrapper">
+            <button type="button" id="firstPage">&lt;&lt;</button>
+            <button type="button" id="prevPage">&lt;</button>
+            <span id="currentPage"></span>
+            <button type="button" id="nextPage">&gt;</button>
+            <button type="button" id="lastPage">&gt;&gt;</button>
+        </div>
+        <div id="container">
+        </div>
+        <img src="./assets/rick-and-morty-portal-shoes-white-clothing-zavvi-23 (1).png" id="bottomImg" alt="Imagem Rick and Morty">
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./js/scripts.js"></script>
 </body>
