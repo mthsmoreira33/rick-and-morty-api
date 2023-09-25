@@ -87,3 +87,9 @@ searchBox.addEventListener("input", () => {
   currentPage = 1;
   loadCharacters(currentPage, searchBox.value);
 });
+firstPageButton.addEventListener("click", () => {
+  if (currentPage > 1 && !isLoading) {
+    currentPage = 1;
+    loadCharacters(currentPage, searchBox.value);
+  }
+});
