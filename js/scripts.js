@@ -6,14 +6,17 @@ let currentPage = 1;
 const PER_PAGE = 6;
 
 let response;
+
 const container = document.getElementById("container");
 const searchBox = document.getElementById("searchBox");
 const prevPageButton = document.getElementById("prevPage");
 const nextPageButton = document.getElementById("nextPage");
 const firstPageButton = document.getElementById("firstPage");
 const lastPageButton = document.getElementById("lastPage");
+
 const card = document.createElement("div");
 card.className = "card";
+
 let isLoading = false;
 
 async function loadCharacters(page = 1, name = "") {
@@ -83,28 +86,33 @@ async function loadCharacters(page = 1, name = "") {
 }
 
 loadCharacters();
+
 searchBox.addEventListener("input", () => {
   currentPage = 1;
   loadCharacters(currentPage, searchBox.value);
 });
+
 firstPageButton.addEventListener("click", () => {
   if (currentPage > 1 && !isLoading) {
     currentPage = 1;
     loadCharacters(currentPage, searchBox.value);
   }
 });
+
 lastPageButton.addEventListener("click", () => {
   if (currentPage < response.data.info.pages && !isLoading) {
     currentPage = Math.ceil(response.data.info.pages);
     loadCharacters(currentPage, searchBox.value);
   }
 });
+
 prevPageButton.addEventListener("click", () => {
   if (currentPage > 1 && !isLoading) {
     currentPage--;
     loadCharacters(currentPage);
   }
 });
+
 nextPageButton.addEventListener("click", () => {
   if (currentPage < response.data.info.pages && !isLoading) {
     currentPage++;
