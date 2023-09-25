@@ -105,3 +105,9 @@ prevPageButton.addEventListener("click", () => {
     loadCharacters(currentPage);
   }
 });
+nextPageButton.addEventListener("click", () => {
+  if (currentPage < response.data.info.pages && !isLoading) {
+    currentPage++;
+    loadCharacters(currentPage, searchBox.value);
+  }
+});
