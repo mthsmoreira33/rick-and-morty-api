@@ -57,4 +57,9 @@ button {
     border-radius: 12px;
     cursor: pointer;
 }
+
+button:disabled {
+    background-color: hsl(120, 98%, 80%);
+    cursor: not-allowed
+}
 }
