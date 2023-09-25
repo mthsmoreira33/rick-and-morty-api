@@ -45,4 +45,16 @@ main {
     justify-content: center;
     padding-top: 20px;
 }
+.buttonWrapper {
+    padding: 20px;
+}
+
+button {
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(120, 98%, 25%);
+    padding: 10px;
+    border-style: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
 }
