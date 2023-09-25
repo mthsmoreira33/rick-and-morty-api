@@ -62,4 +62,27 @@ button:disabled {
     background-color: hsl(120, 98%, 80%);
     cursor: not-allowed
 }
+.card {
+    background-color: hsl(0, 0%, 98%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-radius: 20px;
+    gap: 10px
+}
+
+.card img {
+    width: 40%;
+}
+
+.card h2 {
+    font-size: 1rem;
+}
+
+.infoBox {
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
 }
