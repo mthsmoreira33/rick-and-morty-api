@@ -27,4 +27,11 @@ input {
     border: 1px solid black;
     text-align: center;
 }
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
 }
