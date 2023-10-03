@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 header {
     display: flex;
     flex-direction: column;
@@ -35,14 +36,12 @@ main {
     padding-bottom: 100px;
 }
 #container {
-    width: 80%;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 190px 190px 190px;
-    grid-template-columns: 400px 400px;
-    column-gap: 20px;
-    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100px;
     justify-content: center;
+    align-items: center;
+    gap: 30px;
     padding-top: 20px;
 }
 .buttonWrapper {
@@ -64,16 +63,16 @@ button:disabled {
 }
 .card {
     background-color: hsl(0, 0%, 98%);
-    width: 100%;
     display: flex;
-    align-items: center;
     padding: 8px;
     border-radius: 20px;
-    gap: 10px
+    gap: 10px;
+    width: 650px;
+    height: 200px;
 }
 
 .card img {
-    width: 40%;
+    width: 30%;
 }
 
 .card h2 {
